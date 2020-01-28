@@ -5,10 +5,13 @@
 function a (){
     console.log("歡迎光臨好想電影院")
     console.log("請問你想買幾張電影票？")
-    process.stdin.on('data',function(data){
-        if(data != 0){
-            console.log("我進來了");
-            // process.exit();
+
+    process.stdin.setEncoding('utf8');
+    process.stdin.once('data',function(data){
+        if(data !== 0){
+            // console.log("我進來了");
+            console.log("好的沒問題～請進！電影放印中");
+            process.exit();
         }
     }
     )
