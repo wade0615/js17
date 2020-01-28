@@ -5,13 +5,13 @@
 function a (){
     console.log("歡迎光臨好想電影院")
     console.log("請問你想買幾張電影票？")
-    
+
     process.stdin.setEncoding('utf8');
     process.stdin.on('data',function(data){
         var PositiveInteger = /^([1-9][0-9]*)$/;
         var StrToNun = parseInt(data, 10);
         // var b = StrToNun + 2;
-        console.log(typeof StrToNun);
+        // console.log(typeof StrToNun);
         // console.log(b);
         // if(data !== 0){
         if(!PositiveInteger.test(StrToNun)){
