@@ -5,10 +5,10 @@
 function a (){
     console.log("歡迎光臨好想電影院")
     console.log("請問你想買幾張電影票？")
-    process.stdin.once('data',function(data){
-        if(data == 2){
+    process.stdin.on('data',function(data){
+        if(data != 0){
             console.log("我進來了");
-            process.exit();
+            // process.exit();
         }
     }
     )
