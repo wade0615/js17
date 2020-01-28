@@ -7,7 +7,8 @@ function a (){
     console.log("請問你想買幾張電影票？")
     process.stdin.once('data',function(data){
         if(data == 2){
-            console.log("我進來了")
+            console.log("我進來了");
+            process.exit();
         }
     }
     )
