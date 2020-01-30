@@ -2,7 +2,7 @@
 // 讓使用者輸入客人的人數，並用「!」判斷人數，不為零顯示「照常播放電影」。
 
 
-function a (){
+function movie (){
     console.log("歡迎光臨好想電影院")
     console.log("請問你想買幾張電影票？")
 
@@ -24,4 +24,4 @@ function a (){
     }
     )
 }
-a()
+movie()
