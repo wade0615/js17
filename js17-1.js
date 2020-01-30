@@ -15,7 +15,7 @@ function a (){
         // console.log(b);
         // if(data !== 0){
         if(!PositiveInteger.test(StrToNun)){
-            console.log(StrToNun);
+            // console.log(StrToNun);
             console.log("請勿輸入0或是負數！")
         }else{
             console.log("好的沒問題～請進！電影放印中");
