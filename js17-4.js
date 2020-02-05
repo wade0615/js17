@@ -1,20 +1,12 @@
 // 輸入 n 印出 1+2-3+4-5+6…n 的算式與總和
 
-console.log("我會幫你計算 1+2-3+4-5+6…n 的總和");
+// console.log("我會幫你計算 1+2-3+4-5+6…n 的總和");
+console.log("我會幫你計算 1+2+3+4+5+6…n 的總和");
 console.log("這邊請你輸入 n 的項次:");
-// ReadInput();
 main();
 
-// function main() {
-//     var b = ReadInput();
-//     console.log("jj");
-//     console.log(b);
-// }
-
 function main() {
-    var b = ReadInput();
-    console.log("jj");
-    console.log(b);
+    ReadInput();
 }
 
 async function ReadInput() {
@@ -23,13 +15,12 @@ async function ReadInput() {
         let StrToNun = parseInt(inputnum, 10); // 將輸入的值從 字串string 轉乘 數字number,並指定為10進位
 
         var n = judgment(StrToNun);
-        console.log('hh');
-        console.log(n);
-        return n;
+        console.log('計算結果為：');
+        
+        var a = calculate(n);
+        console.log(a);
+        process.exit();
     });
-    console.log("ff");
-    console.log(f);
-    return f;
 }
 
 function judgment(data) {
@@ -45,8 +36,7 @@ function judgment(data) {
     }
 }
 
-function calculate() {
-    var b = ReadInput();
-    console.log("jj");
-    console.log(b);
+function calculate(n) {
+    answer = n*(n + 1)/2;
+    return answer;
 }
