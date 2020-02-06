@@ -6,21 +6,37 @@ console.log("這邊請你輸入 n 的項次:");
 main();
 
 function main() {
+    var n;
     ReadInput();
+    // console.log(n)
+    // var n = inputnum(n);
+    // var n = judgment(n);
 }
 
-async function ReadInput() {
+function ReadInput() {
+    let p;
     process.stdin.setEncoding('utf8'); // 設定從可讀流讀取的字符編碼為utf8
-    var f = await process.stdin.once('data', function (inputnum) {
-        let StrToNun = parseInt(inputnum, 10); // 將輸入的值從 字串string 轉乘 數字number,並指定為10進位
+    process.stdin.once('data', function bb(n) {
+        // var n = inputnum(n);
+        // var n = judgment(n);
 
-        var n = judgment(StrToNun);
-        console.log('計算結果為：');
-        
-        var a = calculate(n);
-        console.log(a);
-        process.exit();
+        var p = n;
+        return n;
     });
+
+    return;
+}
+
+function inputnum(inputnum) {
+    let StrToNun = parseInt(inputnum, 10); // 將輸入的值從 字串string 轉乘 數字number,並指定為10進位
+
+    return StrToNun;
+    // var n = judgment(StrToNun);
+    // console.log('計算結果為：');
+    
+    // var a = calculate(n);
+    // console.log(a);
+    // process.exit();
 }
 
 function judgment(data) {
