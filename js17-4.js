@@ -6,8 +6,8 @@ console.log("這邊請你輸入 n 的項次:");
 main();
 
 function main() {
-    var n;
-    ReadInput();
+    // var n;
+    var n = ReadInput();
     // console.log(n)
     // var n = inputnum(n);
     // var n = judgment(n);
@@ -16,14 +16,14 @@ function main() {
 function ReadInput() {
     let p;
     process.stdin.setEncoding('utf8'); // 設定從可讀流讀取的字符編碼為utf8
-    process.stdin.once('data', function bb(n) {
+    process.stdin.once('data', function (n) {
         // var n = inputnum(n);
         // var n = judgment(n);
 
-        var p = n;
-        return n;
+        p = n;
+        // return n;
     });
-
+    console.log(p)
     return;
 }
 
